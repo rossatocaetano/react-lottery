@@ -1,10 +1,10 @@
 import React from "react";
 import style from "./NumberBox.module.scss"
 
-const NumberBox = () => {
+const NumberBox: React.FC = (props) => {
     return (
         <div className={style.numberbox}>
-            <p>--</p>
+            <p>{props.children}</p>
         </div>
     )
 }

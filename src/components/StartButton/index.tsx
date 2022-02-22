@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./StartButton.module.scss"
 
-const StartButton = () => {
+const StartButton = (props: any) => { //: { onClick:()=>void }
     return (
-        <button className={ style.startbutton } onClick={() => console.log('cliquei')}>Sort</button>
+        <button className={ style.startbutton } onClick={props.onClick}>Random Numbers</button>
     )
 }
 
