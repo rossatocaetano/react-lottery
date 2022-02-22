@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import generate from "../../utils/generateNumbers";
+import generate from "../../common/utils/generateNumbers";
 import NumberBox from "../NumberBox";
 import StartButton from "../StartButton";
 import style from './AppBox.module.scss'

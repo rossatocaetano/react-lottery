@@ -1,9 +1,21 @@
+@import '../../assets/base';
+
+
+
 .appbox {
+
+    background: $palette3--glassmorphism;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
     display: flex;
     width: 70vw;
     height: 50vh;
-    background-color: rgba(172, 255, 47, 0.705);
-    border-radius: 1em;
+    background-color: $palette3;
+    
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -11,7 +23,7 @@
     .numbersbox {
         display: flex;
         flex-direction: row;
-        border: 3px solid rgba(147, 112, 216, 0.425);
+        border: 3px solid $palette2--glassmorphism;
         padding: 1em;
         border-radius: .7em;
 
