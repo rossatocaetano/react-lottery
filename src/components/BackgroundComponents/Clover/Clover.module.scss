@@ -74,3 +74,18 @@
     }
       
 }
+
+@media (width < $layout-breakpoint-small) {
+    .container {
+        visibility: hidden;
+        
+        /*
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        top: 5em;
+        left: 2em;
+        */
+        
+    }
+}

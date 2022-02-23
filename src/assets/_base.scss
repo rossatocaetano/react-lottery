@@ -17,3 +17,9 @@ $palette5--glassmorphism: rgba(66, 39, 59, 0.35); /* dark-purple */
 $palette1--clover: #4158d0;
 $palette2--clover: #c850c0;
 $palette3--clover: #ffcc70;
+
+/* MEDIA QUERIES INTERVALS */
+$layout-breakpoint-small: 576px;
+$layout-breakpoint-medium: 768px;
+$layout-breakpoint-large: 992px;
+$layout-breakpoint-extra-large: 1200px;

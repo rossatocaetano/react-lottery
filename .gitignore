@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 
-#css
+# compiled css
 *.css
 *.css.map
 

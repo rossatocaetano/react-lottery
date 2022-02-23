@@ -5,7 +5,7 @@ const Clover = (props: any) => {
     return (
         <div className={style.container}>
             <div className={style.clover}>
-        
+
                 <div className={style.norotate}>
                     <div className={[style.face, style.front].join(' ')}></div>
                     <div className={[style.face, style.back].join(' ')}></div>

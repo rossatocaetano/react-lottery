@@ -1,7 +1,5 @@
 @import '../../assets/base';
 
-
-
 .appbox {
     background-color: $palette3--glassmorphism;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -11,8 +9,9 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 
     display: flex;
-    width: 70vw;
-    height: 50vh;
+    width: 70%;
+    max-width: 800px;
+    height: 60%;
     
     
     align-items: center;
@@ -22,19 +21,40 @@
     .numbersbox {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         border: 3px solid $palette2--glassmorphism;
-        padding: 1em;
+        padding: 1rem;
+        margin: 1rem;
         border-radius: .7em;
+        align-items: center;
+        justify-content: center;
+    }
 
-        .numbers {
-            margin-left: 1em;
+    .button {        
+        margin-top: 2.5rem;
+    }
+}
+
+@media (width < $layout-breakpoint-small) {
+    .appbox{
+        width: 80%;
+        min-width: min-content;
+        
+        min-height: min-content;
+        max-height: max-content;
+        padding: .5rem 0;
+        
+
+        .numbersbox {
+            min-height: min-content;
+            min-width: min-content;
+            padding: .5rem;
+            
+        }
+        .button {
+            margin:1rem 0 1rem;
         }
     }
 
-    .button {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        margin-top: 2em;
-    }
+    
 }

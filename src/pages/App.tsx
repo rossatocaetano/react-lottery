@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import AppBox from "../components/AppBox"
 import style from './App.module.scss';
 import Clover from '../components/BackgroundComponents/Clover';

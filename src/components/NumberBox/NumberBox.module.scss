@@ -1,3 +1,5 @@
+@import '../../assets/base';
+
 .numberbox {
     display: flex;
     background-color: #ccc;
@@ -6,11 +8,18 @@
     align-items: center;
     justify-content: center;
 
-    margin-left: .5em;
+    margin: .3em;
 
     border-radius: .7em;
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2.5em;
+}
 
+@media (width < $layout-breakpoint-small) {
+    .numberbox{
+        margin: .2em;
+
+        font-size: 2rem;
+    }
 }
