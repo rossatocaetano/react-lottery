@@ -18,7 +18,6 @@
             );
 }
 
-
 .container {
     width: 600px;
     height: 600px;
@@ -27,16 +26,13 @@
     padding-right: 300px;
     position: absolute;
 
-
     .clover {
         width: 100%;
         height: 100%;
         position: relative;
         transform-style: preserve-3d;
         animation: spin 20s infinite linear;
-        transform: rotateX(10deg) rotateY(5deg);
-        
-        
+        transform: rotateX(10deg) rotateY(5deg);    
 
         .no-rotate, .rotate1, .rotate2, .rotate3 {
             position: absolute;
@@ -71,21 +67,11 @@
             @include clover-background-image2;
             transform: rotateX(360deg) translateZ(-50px);  
         }
-    }
-      
+    }      
 }
 
 @media (width < $layout-breakpoint-small) {
     .container {
-        visibility: hidden;
-        
-        /*
-        width: 20%;
-        height: 20%;
-        position: absolute;
-        top: 5em;
-        left: 2em;
-        */
-        
+        visibility: hidden;        
     }
 }

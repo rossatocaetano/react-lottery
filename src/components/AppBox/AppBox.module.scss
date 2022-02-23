@@ -7,13 +7,10 @@
     -webkit-backdrop-filter: blur( 8px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-
     display: flex;
     width: 70%;
     max-width: 800px;
-    height: 60%;
-    
-    
+    height: 60%;    
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -38,18 +35,15 @@
 @media (width < $layout-breakpoint-small) {
     .appbox{
         width: 80%;
-        min-width: min-content;
-        
+        min-width: min-content;        
         min-height: min-content;
         max-height: max-content;
-        padding: .5rem 0;
-        
+        padding: .5rem 0;        
 
         .numbersbox {
             min-height: min-content;
             min-width: min-content;
-            padding: .5rem;
-            
+            padding: .5rem;            
         }
         .button {
             margin:1rem 0 1rem;
