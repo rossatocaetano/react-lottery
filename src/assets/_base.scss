@@ -1,14 +1,19 @@
 
-/* SCSS RGB */
+/* PRINCIPAL PALETTE - SCSS RGB */
 $palette1: rgba(158, 228, 147, 1); /* granny-smith-apple */
 $palette2: rgba(218, 247, 220, 1); /* nyanza */
 $palette3: rgba(171, 200, 192, 1); /* opal */
 $palette4: rgba(112, 86, 109, 1); /* old-lavender */
 $palette5: rgba(66, 39, 59, 1); /* dark-purple */
 
-/* Glassmorphism */
+/* PRINCIPAL PALETTE - Glassmorphism */
 $palette1--glassmorphism: rgba(158, 228, 147, 0.35); /* granny-smith-apple */
 $palette2--glassmorphism: rgba(218, 247, 220, 0.35); /* nyanza */
 $palette3--glassmorphism: rgba(171, 200, 192, 0.35); /* opal */
 $palette4--glassmorphism: rgba(112, 86, 109, 0.35); /* old-lavender */
 $palette5--glassmorphism: rgba(66, 39, 59, 0.35); /* dark-purple */
+
+/* CLOVER SPECIAL PALETTE */
+$palette1--clover: #4158d0;
+$palette2--clover: #c850c0;
+$palette3--clover: #ffcc70;

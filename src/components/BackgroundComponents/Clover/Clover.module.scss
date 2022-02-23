@@ -1,0 +1,76 @@
+@import '../../../assets/base';
+
+@mixin clover-background-image1() {
+    background-image: linear-gradient(
+              43deg,
+              $palette1 0%,
+              $palette3 46%,
+              $palette5 100%
+            );
+}
+
+@mixin clover-background-image2() {
+    background-image: linear-gradient(
+              43deg,
+              $palette1--clover 0%,
+              $palette2--clover 46%,
+              $palette3--clover 100%
+            );
+}
+
+
+.container {
+    width: 600px;
+    height: 600px;
+    perspective: 800px;
+    margin: 150px auto 0;
+    padding-right: 300px;
+    position: absolute;
+
+
+    .clover {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: spin 20s infinite linear;
+        transform: rotateX(10deg) rotateY(5deg);
+        
+        
+
+        .no-rotate, .rotate1, .rotate2, .rotate3 {
+            position: absolute;
+            transform-style: preserve-3d;
+        }
+          
+        .rotate1{
+            transform: rotateY(180deg) translateZ(50px);
+        }
+          
+        .rotate2{
+            transform: rotateX(180deg) translateZ(50px);
+        }
+          
+        .rotate3{
+            transform: rotateX(180deg) rotateY(180deg);
+        }
+        
+        .face {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 0% 50% 0% 50%;
+        }
+
+        .front {
+            @include clover-background-image2;          
+            transform: rotateX() translateZ(50px);            
+        }
+
+        .back {
+            @include clover-background-image2;
+            transform: rotateX(360deg) translateZ(-50px);  
+        }
+    }
+      
+}

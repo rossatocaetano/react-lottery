@@ -3,8 +3,7 @@
 
 
 .appbox {
-
-    background: $palette3--glassmorphism;
+    background-color: $palette3--glassmorphism;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
@@ -14,7 +13,7 @@
     display: flex;
     width: 70vw;
     height: 50vh;
-    background-color: $palette3;
+    
     
     align-items: center;
     justify-content: center;
