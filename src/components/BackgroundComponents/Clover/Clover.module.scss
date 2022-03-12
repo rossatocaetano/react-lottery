@@ -70,8 +70,10 @@
     }      
 }
 
-@media (width < $layout-breakpoint-small) {
+@media (width < $layout-breakpoint-large) {
     .container {
-        visibility: hidden;        
+        visibility: hidden;
+        width: 0;
+        height: 0;       
     }
 }
