@@ -4,7 +4,7 @@ const generate = ({ size, highest }: { size: number; highest: number; }): number
 		let add = true;
 		let randomNumber = Math.floor(Math.random() * highest) + 1;
 		for(let y = 0; y < highest; y++) {
-			if(numbers[y] == randomNumber) {
+			if(numbers[y] === randomNumber) {
 				add = false;
 			}
 		}
